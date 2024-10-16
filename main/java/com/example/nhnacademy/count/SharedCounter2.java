@@ -38,7 +38,8 @@ private long count;
         }
         this.count = count;
         //TODO#1-1 semaphore를 생성 합니다.( 동시에 하나의 Thread만 접근할 수 있습니다. ), permits prameter를 확인하세요.
-        semaphore = new Semaphore(1); // 1을 줬다는 건 "현재 자원을 사용할 수 있는 허가를 1개 가지고 있다"라는 의미다.
+        semaphore = new Semaphore(1); 
+        // 1을 줬다는 건 "현재 자원을 사용할 수 있는 허가를 1개 가지고 있다"라는 의미다.
         // 세마포어 값이 0보다 크면 자원을 사용할 수 있는 허가가 있다는 뜻이다. 
         // 값이 0이면 모든 자원이 사용 중이므로, 새로운 프로세스는 자원을 사용하기 위해 기다려야 한다.
         // Semaphore(1)의 경우: 초기값이 1이므로, 한 번에 한 개의 프로세스만 자원을 사용할 수 있습니다. 
