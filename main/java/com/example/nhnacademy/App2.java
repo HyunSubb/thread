@@ -1,4 +1,6 @@
-package com.example.nhnacademy.thread;
+package com.example.nhnacademy;
+
+import com.example.nhnacademy.thread.RunnableCounter;
 
 public class App2 {
     public static void main(String[] args) {

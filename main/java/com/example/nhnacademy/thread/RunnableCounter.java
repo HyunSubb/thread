@@ -29,10 +29,11 @@ public class RunnableCounter implements Runnable{
         do {
             try {
                 Thread.sleep(1000);
+                count++;
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            count++;
+            // count++;
             log.info("thread : {} , count {}", Thread.currentThread().getName(), count);
         }while (count < countMaxSize);
     }
